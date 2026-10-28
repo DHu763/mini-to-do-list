@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng Dụng Quản Lý Công Việc - Todo List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>📝 Danh Sách Công Việc</h1>
+            <p class="subtitle">Quản lý và theo dõi tiến độ công việc hàng ngày</p>
+        </header>
+
+        <section class="input-section">
+            <div class="input-group">
+                <input 
+                    type="text" 
+                    id="task-input" 
+                    placeholder="Nhập tên công việc mới cần làm..." 
+                    autocomplete="off"
+                />
+                <button id="add-btn" class="btn btn-primary">
+                    <span class="btn-icon">+</span> Thêm
+                </button>
+            </div>
+            <div id="error-msg" class="error-msg"></div>
+        </section>
+
+        <section class="list-section">
+            <ul id="task-list" class="task-list">
+            </ul>
+            <div id="empty-state" class="empty-state" style="display: none;">
+                <p>🎉 Hiện tại bạn không có công việc nào cần làm!</p>
+            </div>
+        </section>
+
+        <footer class="app-footer">
+            <div class="footer-content">
+                <div class="task-stats">
+                    Tiến độ: <span id="completed-count">0</span>/<span id="total-count">0</span> công việc hoàn thành
+                </div>
+                <div id="all-completed-badge" class="badge-completed" style="display: none;">
+                    <span class="badge-icon">✓</span> Hoàn thành tất cả!
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+# Hệ điều hành (Operating System Files)
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Trình soạn thảo (IDEs & Code Editors)
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Nhật ký & Tạm thời (Logs & Temporary Files)
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
